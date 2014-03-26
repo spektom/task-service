@@ -8,18 +8,22 @@ Running
 
 As a pre-requisite you should have MariaDB installed, and database created as follows:
 
-```
+```sql
 CREATE DATABASE taskdb;
 GRANT ALL ON taskdb.* TO 'user'@'localhost' IDENTIFIED BY 'pass';
 ```
 
 To compile, run:
 
-```mvn clean package```
+```bash
+mvn clean package
+```
 
 To start the REST service, run:
 
-```java -jar target/task-service-0.0.1-SNAPSHOT.jar```
+```bash
+java -jar target/task-service-0.0.1-SNAPSHOT.jar
+```
 
 
 Testing the REST service
